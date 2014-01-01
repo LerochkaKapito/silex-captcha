@@ -26,20 +26,20 @@ For example:
 
 ## Options
 
-|  Key             |    Default      | Type                                          |  Description
-|------------------|-----------------|-----------------------------------------------|--------
-| session_key      | gw_captcha      | string                                        | Name of the session key
-| route_name       | gregwar.captcha | string                                        | Name of the route
-| phrase_builder   | null            | null\|Gregwar\Captcha\CaptchaBuilderInterface | Phrase builder (will be used if phrase is null)
-| phrase           | null            | string\|null                                  | Overrides the phrase
-| width            | 150             | int                                           | Image width in the pixels
-| height           | 40              | int                                           | Image height in the pixels
-| font             | null            | string\|null                                  | Path to the font
-| fingerprint      | null            | boolean                                       | *I don't know that it does, see sources*
-| quality          | 90              | int                                           | Image quality
-| distortion       | true            | boolean                                       | Enable or disable the distortion
-| background       | null            | null\|array(r, g, b)                          | Force background color (this will disable many effects and is not recommended)
-| interpolation    | true            | boolean                                       | Enable or disable the interpolation, disabling it will be quicker but the images will look uglier
+|  Key             |    Default      | Type                                            |  Description
+|------------------|-----------------|-------------------------------------------------|--------
+| session_key      | gw_captcha      | string                                          | Name of the session key
+| route_name       | gregwar.captcha | string                                          | Name of the route
+| phrase_builder   | null            | null or Gregwar\Captcha\CaptchaBuilderInterface | Phrase builder (will be used if phrase is null)
+| phrase           | null            | string or null                                  | Overrides the phrase
+| width            | 150             | int                                             | Image width in the pixels
+| height           | 40              | int                                             | Image height in the pixels
+| font             | null            | string or null                                  | Path to the font
+| fingerprint      | null            | boolean                                         | *I don't know that it does, see sources*
+| quality          | 90              | int                                             | Image quality
+| distortion       | true            | boolean                                         | Enable or disable the distortion
+| background       | null            | null or array(r, g, b)                          | Force background color (this will disable many effects and is not recommended)
+| interpolation    | true            | boolean                                         | Enable or disable the interpolation, disabling it will be quicker but the images will look uglier
 
 
 
