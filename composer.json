@@ -20,6 +20,7 @@
         "gregwar/captcha": "~1.0"
     },
     "require-dev": {
-        "silex/silex": "*"
+        "silex/silex": "*",
+        "phpunit/phpunit": "~4.1"
     }
 }
