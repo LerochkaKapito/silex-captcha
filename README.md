@@ -2,6 +2,8 @@
 
 This is the [Gregwar/Captcha](https://github.com/Gregwar/Captcha/) service provider for [Silex](http://silex.sensiolabs.org)
 
+[![Build Status](https://travis-ci.org/Kilte/silex-captcha.svg?branch=master)](https://travis-ci.org/Kilte/silex-captcha)
+
 # Requirements
 
 - PHP >= 5.3.3
