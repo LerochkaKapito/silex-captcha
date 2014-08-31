@@ -89,6 +89,7 @@ class CaptchaServiceProvider implements ServiceProviderInterface, ControllerProv
 
     /**
      * @{inheritdoc}
+     * @codeCoverageIgnore
      */
     public function boot(Application $app)
     {

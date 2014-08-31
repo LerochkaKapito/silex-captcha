@@ -14,7 +14,6 @@ use Silex\Application;
 use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\UrlGeneratorServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Routing\Generator\UrlGenerator;
 
 /**
  * Class CaptchaServiceProviderTest
@@ -36,7 +35,7 @@ class CaptchaServiceProviderTest extends \PHPUnit_Framework_TestCase
         $app
             ->register(new SessionServiceProvider(), array('session.test' => true))
             ->register(new UrlGeneratorServiceProvider())
-            ->register($provider)
+            ->register($provider, array('captcha.background' => [255, 255, 255]))
             ->mount('/', $provider);
 
         return $app;
@@ -48,10 +47,7 @@ class CaptchaServiceProviderTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInstanceOf('Gregwar\\Captcha\\CaptchaBuilder', $app['captcha.builder']);
 
-        $this->assertStringMatchesFormat(
-            'http://%s/captcha',
-            $app['url_generator']->generate('gregwar.captcha', array(), UrlGenerator::ABSOLUTE_URL)
-        );
+        $this->assertStringMatchesFormat('http://%s/captcha', $app['captcha.image_url']());
 
         $phrase = $app['captcha.builder']->getPhrase();
         $app['session']->set($app['captcha.session_key'], $phrase);
