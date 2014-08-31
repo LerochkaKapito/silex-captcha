@@ -38,7 +38,7 @@ class CaptchaServiceProviderTest extends \PHPUnit_Framework_TestCase
         $app
             ->register(new SessionServiceProvider(), array('session.test' => true))
             ->register(new UrlGeneratorServiceProvider())
-            ->register($provider, array('captcha.background' => [255, 255, 255]))
+            ->register($provider, array('captcha.background' => array(255, 255, 255)))
             ->mount('/', $provider);
 
         return $app;
