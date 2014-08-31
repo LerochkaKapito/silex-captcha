@@ -3,6 +3,9 @@
 /**
  * Part of the CaptchaServiceProvider
  *
+ * For the full copyright and license information,
+ * view the LICENSE file that was distributed with this source code.
+ *
  * @author  Kilte <nwotnbm@gmail.com>
  * @package CaptchaServiceProvider
  */
@@ -47,7 +50,7 @@ class CaptchaServiceProvider implements ServiceProviderInterface, ControllerProv
     );
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     public function register(Application $app)
     {
@@ -88,7 +91,7 @@ class CaptchaServiceProvider implements ServiceProviderInterface, ControllerProv
     }
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      * @codeCoverageIgnore
      */
     public function boot(Application $app)
@@ -96,7 +99,7 @@ class CaptchaServiceProvider implements ServiceProviderInterface, ControllerProv
     }
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     public function connect(Application $app)
     {

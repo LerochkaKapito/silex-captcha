@@ -3,6 +3,9 @@
 /**
  * Part of the CaptchaServiceProvider
  *
+ * For the full copyright and license information,
+ * view the LICENSE file that was distributed with this source code.
+ *
  * @author  Kilte <nwotnbm@gmail.com>
  * @package CaptchaServiceProvider
  */
