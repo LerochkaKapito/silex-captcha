@@ -1,15 +1,13 @@
 <?php
 
 /**
- * Part of the CaptchaServiceProvider
+ * Part of the CaptchaServiceProvider.
  *
  * For the full copyright and license information,
  * view the LICENSE file that was distributed with this source code.
  *
  * @author  Kilte <nwotnbm@gmail.com>
- * @package CaptchaServiceProvider
  */
-
 namespace Kilte\Silex\Captcha\Tests;
 
 use Kilte\Silex\Captcha\CaptchaServiceProvider;
@@ -19,15 +17,12 @@ use Silex\Provider\UrlGeneratorServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Class CaptchaServiceProviderTest
- *
- * @package Kilte\Silex\Captcha\Tests
+ * Class CaptchaServiceProviderTest.
  */
 class CaptchaServiceProviderTest extends \PHPUnit_Framework_TestCase
 {
-
     /**
-     * Returns Silex Application instance
+     * Returns Silex Application instance.
      *
      * @return Application
      */
@@ -65,7 +60,5 @@ class CaptchaServiceProviderTest extends \PHPUnit_Framework_TestCase
         $response = $app->handle($request);
         $this->assertEquals(200, $response->getStatusCode());
         $this->assertEquals('image/jpeg', $response->headers->get('Content-Type'));
-
     }
-
 }

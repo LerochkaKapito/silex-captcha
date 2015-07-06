@@ -1,15 +1,13 @@
 <?php
 
 /**
- * Part of the CaptchaServiceProvider
+ * Part of the CaptchaServiceProvider.
  *
  * For the full copyright and license information,
  * view the LICENSE file that was distributed with this source code.
  *
  * @author  Kilte <nwotnbm@gmail.com>
- * @package CaptchaServiceProvider
  */
-
 namespace Kilte\Silex\Captcha;
 
 use Gregwar\Captcha\CaptchaBuilder;
@@ -22,31 +20,28 @@ use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Routing\Generator\UrlGenerator;
 
 /**
- * CaptchaServiceProvider Class
+ * CaptchaServiceProvider Class.
  *
  * Service provider for Gregwar/Captcha ({@link https://github.com/Gregwar/Captcha})
- *
- * @package Kilte\Silex\Captcha
  */
 class CaptchaServiceProvider implements ServiceProviderInterface, ControllerProviderInterface
 {
-
     /**
      * @var array List of the default settings
      */
     protected $settings = array(
-        'session_key'    => 'gw_captcha',
-        'route_name'     => 'gregwar.captcha',
+        'session_key' => 'gw_captcha',
+        'route_name' => 'gregwar.captcha',
         'phrase_builder' => null,
-        'phrase'         => null,
-        'width'          => 150,
-        'height'         => 40,
-        'font'           => null,
-        'fingerprint'    => null,
-        'quality'        => 90,
-        'distortion'     => true,
-        'background'     => null,
-        'interpolation'  => true,
+        'phrase' => null,
+        'width' => 150,
+        'height' => 40,
+        'font' => null,
+        'fingerprint' => null,
+        'quality' => 90,
+        'distortion' => true,
+        'background' => null,
+        'interpolation' => true,
     );
 
     /**
@@ -56,7 +51,7 @@ class CaptchaServiceProvider implements ServiceProviderInterface, ControllerProv
     {
         // Load defaults
         foreach ($this->settings as $key => $value) {
-            $key = 'captcha.' . $key;
+            $key = 'captcha.'.$key;
             if (!isset($app[$key])) {
                 $app[$key] = $value;
             }
@@ -92,6 +87,7 @@ class CaptchaServiceProvider implements ServiceProviderInterface, ControllerProv
 
     /**
      * {@inheritdoc}
+     *
      * @codeCoverageIgnore
      */
     public function boot(Application $app)
@@ -138,5 +134,4 @@ class CaptchaServiceProvider implements ServiceProviderInterface, ControllerProv
 
         return $collection;
     }
-
 }
