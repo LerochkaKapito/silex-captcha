@@ -21,7 +21,7 @@
     },
     "require-dev": {
         "silex/silex": "*",
-        "phpunit/phpunit": "@stable"
+        "phpunit/phpunit": "~4.7"
     },
     "extra": {
         "branch-alias": {
