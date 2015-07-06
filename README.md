@@ -16,6 +16,9 @@ This is the [Gregwar/Captcha](https://github.com/Gregwar/Captcha/) service provi
 
 ```php
 use Kilte\Silex\Captcha\CaptchaServiceProvider;
+use Silex\Provider\SessionServiceProvider;
+use Silex\Provider\UrlGeneratorServiceProvider;
+
 $app = new Silex\Application();
 $captcha = new CaptchaServiceProvider();
 $app->register(new SessionServiceProvider)
