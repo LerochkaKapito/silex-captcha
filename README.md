@@ -1,5 +1,8 @@
 # CaptchaServiceProvider
 
+ **This project is looking for a maintainer. Please get in touch with [nwotnbm at gmail].**
+
+
 This is the [Gregwar/Captcha](https://github.com/Gregwar/Captcha/) service provider for [Silex](http://silex.sensiolabs.org)
 
 [![Build Status](https://img.shields.io/travis/Kilte/silex-captcha.svg?style=flat-square)](https://travis-ci.org/Kilte/silex-captcha)
