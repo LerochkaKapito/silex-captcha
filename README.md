@@ -3,12 +3,10 @@
  **This project is looking for a maintainer. Please get in touch with [nwotnbm at gmail].**
 
 
-This is the [Gregwar/Captcha](https://github.com/Gregwar/Captcha/) service provider for [Silex](http://silex.sensiolabs.org)
+[Gregwar/Captcha](https://github.com/Gregwar/Captcha/) service provider for [Silex](http://silex.sensiolabs.org)
 
-[![Build Status](https://img.shields.io/travis/Kilte/silex-captcha.svg?style=flat-square)](https://travis-ci.org/Kilte/silex-captcha)
 [![Downloads](https://img.shields.io/packagist/dt/kilte/silex-captcha.svg?style=flat-square)](https://packagist.org/packages/kilte/silex-captcha)
 [![License](https://img.shields.io/packagist/l/kilte/silex-captcha.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/5cad97c6-03e3-4658-8bf4-31bda6c32317.svg?style=flat-square)](https://insight.sensiolabs.com/projects/5cad97c6-03e3-4658-8bf4-31bda6c32317)
 
 ## Requirements
 
