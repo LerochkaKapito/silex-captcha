@@ -3,8 +3,8 @@
 
 [Gregwar/Captcha](https://github.com/Gregwar/Captcha/) service provider for [Silex](http://silex.sensiolabs.org)
 
-[![Downloads](https://img.shields.io/packagist/dt/kilte/silex-captcha.svg?style=flat-square)](https://packagist.org/packages/kilte/silex-captcha)
-[![License](https://img.shields.io/packagist/l/kilte/silex-captcha.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![Downloads](https://img.shields.io/packagist/dt/amstaffix/silex-captcha.svg?style=flat-square)](https://packagist.org/packages/amstaffix/silex-captcha)
+[![License](https://img.shields.io/packagist/l/amstaffix/silex-captcha.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 ## Requirements
 
@@ -87,7 +87,7 @@ $ vendor/bin/phpunit
 
 Do not forget merge upstream changes:
 
-    git remote add upstream https://github.com/Kilte/silex-captcha
+    git remote add upstream https://github.com/AmsTaFFix/silex-captcha
     git checkout master
     git pull upstream
     git push origin master
