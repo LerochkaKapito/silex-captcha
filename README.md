@@ -1,7 +1,5 @@
 # CaptchaServiceProvider
 
- **This project is looking for a maintainer. Please get in touch with [nwotnbm at gmail].**
-
 
 [Gregwar/Captcha](https://github.com/Gregwar/Captcha/) service provider for [Silex](http://silex.sensiolabs.org)
 

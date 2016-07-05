@@ -1,13 +1,21 @@
 {
-    "name":        "kilte/silex-captcha",
-    "type":        "library",
-    "keywords":   ["silex", "captcha", "CaptchaServiceProvider"],
+    "name": "amstaffix/silex-captcha",
+    "type": "library",
+    "keywords": [
+        "silex",
+        "captcha",
+        "CaptchaServiceProvider"
+    ],
     "description": "Gregwar/Captcha service provider for Silex.",
-    "license":     "MIT",
+    "license": "MIT",
     "authors": [
         {
-            "name":  "Kilte",
+            "name": "Kilte",
             "email": "nwotnbm@gmail.com"
+        },
+        {
+            "name": "Nikita Sapogov",
+            "email": "amstaffix@gmail.com"
         }
     ],
     "autoload": {
