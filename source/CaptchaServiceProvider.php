@@ -13,8 +13,9 @@ namespace Kilte\Silex\Captcha;
 use Gregwar\Captcha\CaptchaBuilder;
 use Silex\Application;
 use Silex\ControllerCollection;
-use Silex\ControllerProviderInterface;
-use Silex\ServiceProviderInterface;
+use Silex\Api\ControllerProviderInterface;
+use Pimple\Container;
+use Pimple\ServiceProviderInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Routing\Generator\UrlGenerator;
@@ -47,7 +48,7 @@ class CaptchaServiceProvider implements ServiceProviderInterface, ControllerProv
     /**
      * {@inheritdoc}
      */
-    public function register(Application $app)
+    public function register(Container $app)
     {
         // Load defaults
         foreach ($this->settings as $key => $value) {
@@ -57,11 +58,9 @@ class CaptchaServiceProvider implements ServiceProviderInterface, ControllerProv
             }
         }
         // Instance of builder
-        $app['captcha.builder'] = $app->share(
-            function (Application $app) {
+        $app['captcha.builder'] = function (Application $app) {
                 return new CaptchaBuilder($app['captcha.phrase'], $app['captcha.phrase_builder']);
-            }
-        );
+            };
         // Checks captcha
         $app['captcha.test'] = $app->protect(
             function ($phrase) use ($app) {
